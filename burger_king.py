@@ -1,5 +1,4 @@
 import backEnd
-import frontEnd
 
 class burger_king(backEnd.backEnd):
     def __init__(self, file, sheet, address, column):

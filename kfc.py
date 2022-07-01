@@ -1,5 +1,5 @@
 import backEnd
-import frontEnd
+
 
 class kfc_class(backEnd.backEnd):
     def __init__(self, file, sheet, address, column):
