@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+    h1 {text-align: center;}
+    p {text-align: center;}
+div {text-align: center;}
+form {text-align: center;}
+
+</style>
+    <title>{{title}}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+<div>
+    <br/><br/>
+    <br/><br/><br/><br/>
+    <h1>Attach an Excel File</h1>
+    <p>Please attach an Excel file you would like us to parse and edit.</p>
+    <br/><br/><br/><br/>
+</div>
+
+<form method = 'POST' enctype = 'multipart/form-data'>
+    {{form.hidden_tag()}}
+    {{form.file()}}
+    {{form.submit()}}
+
+</form>
+
+</body>
+</html>

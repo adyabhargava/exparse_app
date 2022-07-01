@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}{{ title }}
+
+<h1>Details</h1>
+
+<br/><br/>
+<div class="container">
+    <form action = "/results" method="POST">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Sheet Name:</label>
+            <input type="text" class="form-control" id="input" aria-describedby="inputhelp"
+                   placeholder="june26.xlsx" name = 'filename'>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Company to Parse:</label>
+            <input type="text" class="form-control" id="any" aria-describedby="inputhelp"
+                   placeholder="McDonald's, KFC, Pizza Hut, Burger King, Domino's" name = 'company'>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Sheet Name</label>
+            <input type="text" class="form-control" id="sheetname" aria-describedby="sheethelp"
+                   placeholder="McDonald's, Sheet1, etc" name = 'sheet_name'>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Column to Extract Data from</label>
+            <input type="text" class="form-control" id="extraction" aria-describedby="extracthelp"
+                   placeholder="A, B, C etc" name = 'extraction'>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Column to Input Data into</label>
+            <input type="text" class="form-control" id="any2" aria-describedby="inputhelp"
+                   placeholder="B, C, D, etc" name = 'insertion'>
+        </div>
+
+        <br/>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <br/><br/><br/><br/>
+    </form>
+</div>
+
+
+{% endblock %}
