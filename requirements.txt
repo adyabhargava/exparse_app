@@ -15,7 +15,6 @@ greenlet==1.1.2
 gunicorn==20.1.0
 h11==0.13.0
 heroku==0.1.4
-heroku3==5.1.4
 idna==3.3
 importlib-metadata==4.12.0
 itsdangerous==2.1.2
