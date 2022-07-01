@@ -15,6 +15,7 @@ greenlet==1.1.2
 gunicorn==20.1.0
 h11==0.13.0
 heroku==0.1.4
+heroku3==5.1.4
 idna==3.3
 importlib-metadata==4.12.0
 itsdangerous==2.1.2
@@ -23,7 +24,6 @@ MarkupSafe==2.1.1
 numpy==1.23.0
 openpyxl==3.0.10
 outcome==1.2.0
-pandas==1.4.3
 Pillow==9.1.1
 pycparser==2.21
 pyOpenSSL==22.0.0
